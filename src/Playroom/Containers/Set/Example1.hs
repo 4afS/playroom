@@ -18,6 +18,6 @@ main = do
   print $ Set.lookupMin s1
   print $ Set.insert 10000 s1
   print $ Set.filter (< 5) s1
-  print $ Set.union s1 s2
-  print $ Set.intersection s1 s2
+  print $ s1 `Set.union` s2
+  print $ s1 `Set.intersection` s2
   print $ s1 `Set.isSubsetOf` s2
